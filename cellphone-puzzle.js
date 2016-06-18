@@ -5,7 +5,7 @@ var cellPhoneOneBroken = false;
 var cellPhoneTwoBroken = false;
 
 //returns a boolean
-function doesBreak(currDropFloor) {
+function doesBreak() {
 	if (currDropFloor < minDropFloor) {
 		return false;
 	}
@@ -25,14 +25,36 @@ function doesBreak(currDropFloor) {
 	if (necessaryTriesIfDoesBreak > maxTriesIfDoesNotBreak) {
 		return true;
 	}
-	var necessaryTriesIfDoesNotBreak = triesNecessary(maxDropFloor - currDropFloor);
+	var necessaryTriesIfDoesNotBreak = getTriesNecessary(maxDropFloor - currDropFloor);
+	if (necessaryTriesIfDoesBreak > necessaryTriesIfDoesNotBreak) {
+		return true;
+	} else {
+		return false;
+	}
 }
 
 //returns the number of tries necessary for a building of height numFloors
-function triesNecessary(numFloors) {
+function getTriesNecessary(numFloors) {
 	if (numFloors == 1) {
 		return 1;
 	}
+	var triesNecessary = numFloors;
+	var floorGuessed;
+	for (floorGuessed = 1; floorGuessed <= numFloors / 2; floorGuessed++) {
+		var numGuesses = 0;
+		var currentGuess = floorGuessed;
+		while (currentGuess <= numFloors && floorGuessed - numGuesses > 0) {
+			numGuesses++;
+			currentGuess += floorGuessed - numGuesses;
+		}
+		if (currentGuess <= numFloors) {
+			numGuesses += numFloors - currentGuess;
+		} else {
+			numGuesses += numFloors - (currentGuess - (floorGuessed - numGuesses));
+		}
+		triesNecessary = Math.min(triesNecessary, Math.min(numGuesses, floorGuessed));
+	}
+	return triesNecessary;
 }
 
 function guessedRight(floorGuess) {
