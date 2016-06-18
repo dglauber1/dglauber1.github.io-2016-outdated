@@ -40,7 +40,7 @@ function getTriesNecessary(numFloors) {
 	}
 	var triesNecessary = numFloors;
 	var floorGuessed;
-	for (floorGuessed = 1; floorGuessed <= numFloors / 2; floorGuessed++) {
+	for (floorGuessed = 1; floorGuessed <= numFloors; floorGuessed++) {
 		var numGuesses = 0;
 		var currentGuess = floorGuessed;
 		while (currentGuess <= numFloors && floorGuessed - numGuesses > 0) {
@@ -52,7 +52,7 @@ function getTriesNecessary(numFloors) {
 		} else {
 			numGuesses += numFloors - (currentGuess - (floorGuessed - numGuesses));
 		}
-		triesNecessary = Math.min(triesNecessary, Math.min(numGuesses, floorGuessed));
+		triesNecessary = Math.min(triesNecessary, Math.max(numGuesses, floorGuessed));
 	}
 	return triesNecessary;
 }
