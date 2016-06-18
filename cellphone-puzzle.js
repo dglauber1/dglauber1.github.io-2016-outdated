@@ -4,6 +4,12 @@ var minDropFloor = 1;//the minimum floor at which it might break
 var cellPhoneOneBroken = false;
 var cellPhoneTwoBroken = false;
 
+//
+function handleGuess() {
+
+
+}
+
 //returns a boolean
 function doesBreak() {
 	if (currDropFloor < minDropFloor) {
