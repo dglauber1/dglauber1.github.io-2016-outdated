@@ -27,7 +27,7 @@ function handleGuess() {
 		$("#guess-input").hide();
 	} else if (doesBreak(floorGuessNum)) {
 		if (!cellPhoneOneBroken) {
-			$("#feedback").text("Cell phone 1 broke on floor " + floorGuessNum);
+			$("#feedback").append("Cell phone 1 broke on floor " + floorGuessNum);
 			$("#drop-phone").html("Drop cellphone 2");
 			cellPhoneOneBroken = true;
 			maxDropFloor = floorGuessNum;
