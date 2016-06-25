@@ -73,7 +73,7 @@ function handleFinalGuess() {
 		} else if (maxDropFloor == finalGuess) {
 			$("#feedback").append(finalGuess - 1);
 		} else {
-			$("#feedback").append(minDropFloor + 1);
+			$("#feedback").append(minDropFloor);
 		}
 	}
 }
