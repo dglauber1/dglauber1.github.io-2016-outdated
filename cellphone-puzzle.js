@@ -19,10 +19,11 @@ function handleGuess() {
 	$("#error").text("");
 	$("#num-drops").text("Drops: " + ++guesses);
 	if (cellPhoneOneBroken && !cellPhoneTwoBroken && floorGuessNum > minDropFloor) {
-		
 		$("#feedback").append("<br>Cell phone 2 broke on floor " + floorGuessNum);
 		cellPhoneTwoBroken = true;
-		maxDropFloor = floorGuessNum;
+		if (floorGuessNum < maxDropFloor) {
+			maxDropFloor = floorGuessNum;
+		}
 		$("#drop-phone").hide();
 		$("#guess-input").hide();
 	} else if (doesBreak(floorGuessNum)) {
@@ -34,6 +35,9 @@ function handleGuess() {
 		} else if (!cellPhoneTwoBroken) {
 			$("#feedback").append("<br>Cell phone 2 broke on floor " + floorGuessNum);
 			cellPhoneTwoBroken = true;
+			if (floorGuessNum < maxDropFloor) {
+				maxDropFloor = floorGuessNum;
+			}
 			$("#drop-phone").hide();
 			$("#guess-input").hide();
 		}
