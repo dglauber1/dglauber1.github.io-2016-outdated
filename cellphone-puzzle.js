@@ -66,8 +66,10 @@ function handleFinalGuess() {
 		$("#feedback").append("<br>Incorrect. The lowest floor at which a dropped cellphone will break is floor ");
 		if (minDropFloor == finalGuess) {
 			$("#feedback").append(minDropFloor + 1);
-		} else {
+		} else if (maxDropFloor == finalGuess) {
 			$("#feedback").append(finalGuess - 1);
+		} else {
+			$("#feedback").append(minDropFloor + 1);
 		}
 	}
 }
