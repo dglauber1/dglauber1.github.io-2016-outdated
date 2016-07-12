@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Two Stones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/html5bp.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- /CSS -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <!-- /JavaScript -->
+
+  </head>
+  <body>
+	<div id="container">
+		<canvas id="map"></canvas>
+		<div id="zoom-wrapper">
+			-
+			<input type="range" id="zoomSlider" step="any">
+			+
+			<div>
+				Streak: <p id="streak" style="display:inline"> </p>
+			</div>
+		</div>
+	</div>
+
+<!--
+    <div class="content">
+		<h1 class="title-h1"> Two Stones </h1>
+
+		<div class="flex-container">
+			<div class="row">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-4" style="text-align: center">
+					<input type="checkbox" checked id="showGrid"> Show grid (100m. / unit) <br> <br>
+				</div>
+				<div class="col-xs-4"></div>
+			</div>
+			<div class="row" id="map-scaling-row">
+				<div class="col-xs-2"></div>
+				<div class="col-xs-2" style="text-align: right">+</div>
+				<div class="col-xs-4">
+					<span style="display: block">
+-->					<!--				</span>
+	-			</div>
+				<div class="col-xs-2" style="text-align: left">-</div>
+				<div class="col-xs-2"></div>
+			</div>
+			<div id="canvas-div">
+			</div>
+		</div>
+
+    </div>
+-->
+	<script src="js/paint.js"></script>
+	<script src="js/canvas.js"></script>
+  </body>
+</html>
