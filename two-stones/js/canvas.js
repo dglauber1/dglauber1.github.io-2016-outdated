@@ -120,12 +120,12 @@ function handleMouseClick() {
 	if (computerthinking) {
 		return;
 	}
-    humanturn++;
 	var gridX = Math.floor((mouse_x + CANVAS_X) / PIXELS_PER_TILE); 
 	var gridY = Math.floor((mouse_y + CANVAS_Y) / PIXELS_PER_TILE);
     if (pieces[gridX] != null && pieces[gridX][gridY] != null) {
 		return;
 	}
+    humanturn++;
 	if (pieces[gridX] == null) {
 		pieces[gridX] = {};
 	}
