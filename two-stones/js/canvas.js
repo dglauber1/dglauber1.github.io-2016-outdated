@@ -205,6 +205,8 @@ function handleMouseClick() {
 	}
 	pieces[gridX][gridY] = 1;
     updateStreak(gridX, gridY);
+	hoverX = null;
+	hoverY = null;
 	paintMap();
     if (humanturn > 2) {
         computerthinking = true;
