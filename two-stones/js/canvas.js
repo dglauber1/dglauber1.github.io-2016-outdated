@@ -123,14 +123,18 @@ function computerPlacePiece() {
                 continue;
             }
             updateBoardWeights(parseInt(x), parseInt(y));
-            var returnObject = getstreakSmart();//getstreak(parseInt(x), parseInt(y));
-            if (returnObject["streak"] > maxStreak) {
-                gridX = returnObject["toPlaceX"];
-                gridY = returnObject["toPlaceY"];
-                maxStreak = returnObject["streak"];
-            }
+            //getstreak(parseInt(x), parseInt(y));
+            // if (returnObject["streak"] > maxStreak) {
+            //     gridX = returnObject["toPlaceX"];
+            //     gridY = returnObject["toPlaceY"];
+            //     maxStreak = returnObject["streak"];
+            // }
         }
     }
+    var returnObject = getstreakSmart();
+    gridX = returnObject["toPlaceX"];
+    gridY = returnObject["toPlaceY"];
+    // maxStreak = returnObject["streak"];
     if (pieces[gridX] == null) {
         pieces[gridX] = {};
     }
