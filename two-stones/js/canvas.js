@@ -1,8 +1,8 @@
 MAP_WIDTH = window.innerWidth; 
 MAP_HEIGHT = window.innerHeight;
-PIXELS_PER_TILE = 50;
-MAX_PIXELS_PER_TILE = 200;
-MIN_PIXELS_PER_TILE = 40;
+PIXELS_PER_TILE = 100;
+MAX_PIXELS_PER_TILE = 125;
+MIN_PIXELS_PER_TILE = 35;
 GRID_WIDTH = MAP_WIDTH / PIXELS_PER_TILE;
 GRID_HEIGHT = MAP_HEIGHT / PIXELS_PER_TILE;
 CANVAS_X = 25; //pixel displacement from grid origin 
@@ -18,7 +18,9 @@ map.height = MAP_HEIGHT;
 
 pieces = {}; //2D array. elements: (1 -> human piece, -1 -> computer piece)
 showGrid = true;
-paintMap();
+$(document).ready(function() {
+    paintMap();
+});
 
 //$("#showGrid").on("click", function() {
 //    showGrid = this.checked;
@@ -28,8 +30,8 @@ paintMap();
 computerthinking = false;
 mousedown = false;
 mapdragged = false;
-mouse_x = 0;
-mouse_y = 0;
+initial_mouse_x = 0;
+initial_mouse_y = 0;
 humanturn = 1;
 longeststreak = 0;
 
@@ -171,12 +173,29 @@ function updateStreak(x, y) {
     $("#streak").html(streakString);
 }
 
+hoverX = -5;
+hoverY = -5;
+
+function handleMouseMove() {
+    var canvasX = Math.floor((currMouseX + (CANVAS_X % PIXELS_PER_TILE + PIXELS_PER_TILE) % PIXELS_PER_TILE) / PIXELS_PER_TILE); 
+    var canvasY = Math.floor((currMouseY + (CANVAS_Y % PIXELS_PER_TILE + PIXELS_PER_TILE) % PIXELS_PER_TILE) / PIXELS_PER_TILE);
+    var gridX = Math.floor((currMouseX + CANVAS_X) / PIXELS_PER_TILE);
+    var gridY = Math.floor((currMouseY + CANVAS_Y) / PIXELS_PER_TILE);
+    if (pieces[gridX] != null && pieces[gridX][gridY] != null) {
+        hoverX = null;
+        hoverY = null;
+        return;
+    }
+    hoverX = canvasX;
+    hoverY = canvasY;
+}
+
 function handleMouseClick() {
 	if (computerthinking) {
 		return;
 	}
-	var gridX = Math.floor((mouse_x + CANVAS_X) / PIXELS_PER_TILE); 
-	var gridY = Math.floor((mouse_y + CANVAS_Y) / PIXELS_PER_TILE);
+	var gridX = Math.floor((initial_mouse_x + CANVAS_X) / PIXELS_PER_TILE); 
+	var gridY = Math.floor((initial_mouse_y + CANVAS_Y) / PIXELS_PER_TILE);
     if (pieces[gridX] != null && pieces[gridX][gridY] != null) {
 		return;
 	}
@@ -189,10 +208,11 @@ function handleMouseClick() {
 	paintMap();
     if (humanturn > 2) {
         computerthinking = true;
-        computerPlacePiece();
         setTimeout(function() { 
-            paintMap();
+            computerPlacePiece();
             computerthinking = false;
+            handleMouseMove();
+            paintMap();
         }, 500);  
         humanturn = 1;
     }
@@ -221,7 +241,6 @@ function zoomMap(newPixelsPerTile, mouseX, mouseY) {
     GRID_WIDTH = MAP_WIDTH / newPixelsPerTile;
 	GRID_HEIGHT = MAP_HEIGHT / newPixelsPerTile;
     PIXELS_PER_TILE = newPixelsPerTile;
-    paintMap();
 }
 
 function zoomScroll(event) {
@@ -234,11 +253,9 @@ function zoomScroll(event) {
         return;
     }
     
-    mouse_x = event.pageX;
-    mouse_y = event.pageY;
-    mouse_x -= map.offsetLeft;
-    mouse_y -= map.offsetTop;
-    zoomMap(newPixelsPerTile, mouse_x, mouse_y);
+    initial_mouse_x = event.pageX;
+    initial_mouse_y = event.pageY;
+    zoomMap(newPixelsPerTile, initial_mouse_x, initial_mouse_y);
     $("#zoomSlider")[0].value = newPixelsPerTile;
 }
 
@@ -252,9 +269,17 @@ $(window).on("resize", function(event){
 	paintMap();
 });
 
+$(window).on("mouseout", function(event) {
+    hoverX = null;
+    hoverY = null;
+    paintMap();
+});
+
 //mousewheel isn't recognized by firefox browsers
 $("#map").on('mousewheel', function(event){
     zoomScroll(event);
+    handleMouseMove(event.pageX, event.pageY);
+    paintMap();
 });
 
 $("#zoomSlider").on("input", function(event) {
@@ -264,18 +289,16 @@ $("#zoomSlider").on("input", function(event) {
 
 $("#map").on('mousedown', function(event){
 	mousedown = true;
-	mouse_x = event.pageX;
-	mouse_y = event.pageY;
+	initial_mouse_x = event.pageX;
+	initial_mouse_y = event.pageY;
     initial_canvas_x = CANVAS_X;
     initial_canvas_y = CANVAS_Y;
 });
 
 $("#map").on('mouseup', function(event){
     if (!mapdragged) {
-        mouse_x = event.pageX;
-        mouse_y = event.pageY;
-        mouse_x -= map.offsetLeft;
-        mouse_y -= map.offsetTop;
+        initial_mouse_x = event.pageX;
+        initial_mouse_y = event.pageY;
 		handleMouseClick();
     }
     mousedown = false;
@@ -288,8 +311,11 @@ $(window).on('mousemove', function(event){
         if (!mapdragged) {
             mapdragged = true;
         }
-		CANVAS_X = initial_canvas_x + mouse_x - event.pageX;
-		CANVAS_Y = initial_canvas_y + mouse_y - event.pageY;
-		paintMap();
-	}
+		CANVAS_X = initial_canvas_x + initial_mouse_x - event.pageX;
+		CANVAS_Y = initial_canvas_y + initial_mouse_y - event.pageY;
+    }
+    currMouseX = event.pageX;
+    currMouseY = event.pageY;
+    handleMouseMove();
+    paintMap();
 });

@@ -1,6 +1,7 @@
 function paintMap() {
     var ctx = map.getContext('2d');
     ctx.clearRect(0, 0, map.width, map.height);
+    paintMouseHover();
 	var topLeftX = Math.floor(CANVAS_X / PIXELS_PER_TILE); //grid coordinate of top left tile
 	var topLeftY = Math.floor(CANVAS_Y / PIXELS_PER_TILE); //grid coordinate of top left tile
 	for (var i = topLeftX; i < topLeftX + GRID_WIDTH + 1; i++) {
@@ -48,5 +49,19 @@ function paintGrid() {
         ctx.lineTo(MAP_WIDTH, i);
     }
     ctx.stroke();
+    ctx.closePath();
+}
+
+function paintMouseHover() {
+    var ctx = map.getContext('2d');
+    ctx.beginPath();
+    if (computerthinking || hoverX == null) {
+        ctx.fillStyle = 'white';
+    } else {
+        ctx.fillStyle = '#898989';
+    }
+    ctx.rect(((-1 * CANVAS_X) % PIXELS_PER_TILE - PIXELS_PER_TILE) % PIXELS_PER_TILE + hoverX * PIXELS_PER_TILE,
+             ((-1 * CANVAS_Y) % PIXELS_PER_TILE - PIXELS_PER_TILE) % PIXELS_PER_TILE + hoverY * PIXELS_PER_TILE, PIXELS_PER_TILE, PIXELS_PER_TILE);
+    ctx.fill();
     ctx.closePath();
 }
