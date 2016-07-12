@@ -5,7 +5,7 @@ MAX_PIXELS_PER_TILE = 200;
 MIN_PIXELS_PER_TILE = 40;
 GRID_WIDTH = MAP_WIDTH / PIXELS_PER_TILE;
 GRID_HEIGHT = MAP_HEIGHT / PIXELS_PER_TILE;
-CANVAS_X = 25; //pixel displacement from grid origin (1 so top left tile initially is visible)
+CANVAS_X = 25; //pixel displacement from grid origin 
 CANVAS_Y = 25; //pixel displacement from grid origin
 
 map = document.getElementById('map');
@@ -63,7 +63,57 @@ function getstreak(x, y) {
     return toReturn;
 }
 
+function updateBoardWeights(x, y) {
+    for (var i = -1; i < 2; i++) {
+        for (var j = -1; j < 2; j++) {
+            if (pieces[i + x] == null || pieces[i + x][j + y] == null) {
+                incrementX = i * -1;
+                incrementY = j * -1;
+                var streak = 1;
+                while (pieces[incrementX + x] != null && pieces[incrementX + x][incrementY + y] != null && pieces[incrementX + x][incrementY + y] != -1) {
+                    streak++;
+                    incrementX += i * -1;
+                    incrementY += j * -1;    
+                }
+                if (boardWeights[i + x] == null) {
+                    boardWeights[i + x] = {};
+                }
+                if (boardWeights[i + x][j + y] == null) {
+                    boardWeights[i + x][j + y] = [0, 0]; //[board weight, max streak]
+                }
+                boardWeights[i + x][j + y][0] = parseInt(boardWeights[i + x][j + y][0]) + streak;
+                if (streak > boardWeights[i + x][j + y][1]) {
+                    boardWeights[i + x][j + y][1] = streak;
+                }
+            }
+        }
+    }
+}
+
+function getstreakSmart() {
+    var maxWeight = 0;
+    var gridX;
+    var gridY;
+    console.log(boardWeights);
+    for (var x in boardWeights) {
+        for (var y in boardWeights[x]) {
+            if (maxWeight < boardWeights[x][y][0]) {
+                maxWeight = boardWeights[x][y][0];
+                gridX = x;
+                gridY = y;
+            }
+        }
+    }
+    toReturn = {};
+    toReturn["streak"] = boardWeights[gridX][gridY][1];
+    toReturn["toPlaceX"] = gridX;
+    toReturn["toPlaceY"] = gridY;
+    return toReturn;
+}
+
+boardWeights = {};
 function computerPlacePiece() {
+    boardWeights = {};
     var gridX;
     var gridY;
     var maxStreak = 0;
@@ -72,7 +122,8 @@ function computerPlacePiece() {
             if (pieces[x][y] == -1) {
                 continue;
             }
-            var returnObject = getstreak(parseInt(x), parseInt(y));
+            updateBoardWeights(parseInt(x), parseInt(y));
+            var returnObject = getstreakSmart();//getstreak(parseInt(x), parseInt(y));
             if (returnObject["streak"] > maxStreak) {
                 gridX = returnObject["toPlaceX"];
                 gridY = returnObject["toPlaceY"];

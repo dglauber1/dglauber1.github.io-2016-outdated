@@ -39,11 +39,11 @@ function paintGrid() {
 
     ctx.beginPath();
     ctx.strokeStyle = '#898989';
-    for (var i = (-1 * CANVAS_X) % PIXELS_PER_TILE; i < MAP_WIDTH; i+=PIXELS_PER_TILE){
+    for (var i = (-1 * CANVAS_X) % PIXELS_PER_TILE; i < MAP_WIDTH; i += PIXELS_PER_TILE) {
         ctx.moveTo(i, 0);
         ctx.lineTo(i, MAP_HEIGHT);
     }
-    for (var i = (-1 * CANVAS_Y) % PIXELS_PER_TILE; i < MAP_HEIGHT; i+=PIXELS_PER_TILE){
+    for (var i = (-1 * CANVAS_Y) % PIXELS_PER_TILE; i < MAP_HEIGHT; i += PIXELS_PER_TILE) {
         ctx.moveTo(0, i);
         ctx.lineTo(MAP_WIDTH, i);
     }
