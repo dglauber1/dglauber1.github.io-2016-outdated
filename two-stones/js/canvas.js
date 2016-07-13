@@ -179,13 +179,13 @@ hoverY = -5;
 function handleMouseMove() {
     var canvasX = Math.floor((currMouseX + (CANVAS_X % PIXELS_PER_TILE + PIXELS_PER_TILE) % PIXELS_PER_TILE) / PIXELS_PER_TILE); 
     var canvasY = Math.floor((currMouseY + (CANVAS_Y % PIXELS_PER_TILE + PIXELS_PER_TILE) % PIXELS_PER_TILE) / PIXELS_PER_TILE);
-    var gridX = Math.floor((currMouseX + CANVAS_X) / PIXELS_PER_TILE);
-    var gridY = Math.floor((currMouseY + CANVAS_Y) / PIXELS_PER_TILE);
-    if (pieces[gridX] != null && pieces[gridX][gridY] != null) {
-        hoverX = null;
-        hoverY = null;
-        return;
-    }
+//    var gridX = Math.floor((currMouseX + CANVAS_X) / PIXELS_PER_TILE);
+//    var gridY = Math.floor((currMouseY + CANVAS_Y) / PIXELS_PER_TILE);
+//    if (pieces[gridX] != null && pieces[gridX][gridY] != null) {
+//        hoverX = null;
+//        hoverY = null;
+//        return;
+//    }
     hoverX = canvasX;
     hoverY = canvasY;
 }
@@ -205,11 +205,12 @@ function handleMouseClick() {
 	}
 	pieces[gridX][gridY] = 1;
     updateStreak(gridX, gridY);
-	hoverX = null;
-	hoverY = null;
+//	hoverX = null;
+//	hoverY = null;
 	paintMap();
     if (humanturn > 2) {
         computerthinking = true;
+		paintMap();
         setTimeout(function() { 
             computerPlacePiece();
             computerthinking = false;
@@ -297,7 +298,7 @@ $("#map").on('mousedown', function(event){
     initial_canvas_y = CANVAS_Y;
 });
 
-$("#map").on('mouseup', function(event){
+$(window).on('mouseup', function(event){
     if (!mapdragged) {
         initial_mouse_x = event.pageX;
         initial_mouse_y = event.pageY;
