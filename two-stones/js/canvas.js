@@ -173,8 +173,8 @@ function updateStreak(x, y) {
     $("#streak").html(streakString);
 }
 
-hoverX = -5;
-hoverY = -5;
+hoverX = null;
+hoverY = null;
 
 function handleMouseMove() {
     var canvasX = Math.floor((currMouseX + (CANVAS_X % PIXELS_PER_TILE + PIXELS_PER_TILE) % PIXELS_PER_TILE) / PIXELS_PER_TILE); 
@@ -281,6 +281,8 @@ $(window).on("mouseout", function(event) {
 //mousewheel isn't recognized by firefox browsers
 $("#map").on('mousewheel', function(event){
     zoomScroll(event);
+	currMouseX = event.pageX; //mouse position may not be initialized in the case where
+	currMouseY = event.pageY; //a user refreshes browser and scrolls without first moving mouse
     handleMouseMove(event.pageX, event.pageY);
     paintMap();
 });
@@ -288,6 +290,15 @@ $("#map").on('mousewheel', function(event){
 $("#zoomSlider").on("input", function(event) {
     var sliderValue = parseFloat($("#zoomSlider")[0].value);
     zoomMap(sliderValue, MAP_WIDTH / 2, MAP_WIDTH / 2);
+	paintMap();
+});
+
+sliderDragged = false;
+$("#zoomSlider").on("mousedown", function(event) {
+	sliderDragged = true;
+	hoverX = null;
+	hoverY = null;
+	paintMap();
 });
 
 $("#map").on('mousedown', function(event){
@@ -299,16 +310,21 @@ $("#map").on('mousedown', function(event){
 });
 
 $(window).on('mouseup', function(event){
-    if (!mapdragged) {
+    if (!mapdragged && !sliderDragged) {
         initial_mouse_x = event.pageX;
         initial_mouse_y = event.pageY;
 		handleMouseClick();
     }
+	sliderDragged = false;
     mousedown = false;
     mapdragged = false;
+	paintMap();
 });
 
 $(window).on('mousemove', function(event){
+	if (sliderDragged) {
+		return;
+	}
 	if (mousedown) {
         event.preventDefault();
         if (!mapdragged) {
