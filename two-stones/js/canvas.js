@@ -293,6 +293,14 @@ $("#zoomSlider").on("input", function(event) {
 	paintMap();
 });
 
+$("#zoom-wrapper").on("mousewheel", function(event) {
+    zoomScroll(event);
+	currMouseX = event.pageX; //mouse position may not be initialized in the case where
+	currMouseY = event.pageY; //a user refreshes browser and scrolls without first moving mouse
+    handleMouseMove(event.pageX, event.pageY);
+    paintMap();
+});
+
 sliderDragged = false;
 $("#zoomSlider").on("mousedown", function(event) {
 	sliderDragged = true;
