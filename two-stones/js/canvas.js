@@ -289,7 +289,7 @@ $("#map").on('mousewheel', function(event){
 
 $("#zoomSlider").on("input", function(event) {
     var sliderValue = parseFloat($("#zoomSlider")[0].value);
-    zoomMap(sliderValue, MAP_WIDTH / 2, MAP_WIDTH / 2);
+    zoomMap(sliderValue, MAP_WIDTH / 2, MAP_HEIGHT / 2);
 	paintMap();
 });
 
