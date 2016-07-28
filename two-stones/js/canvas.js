@@ -147,19 +147,27 @@ function updateStreak(x, y) {
     var maxStreak = 0;
     for (var i = -1; i < 2; i++) {
         for (var j = -1; j < 2; j++) {
-            if (pieces[i + x] == null || pieces[i + x][j + y] == null) {
-                incrementX = i * -1;
-                incrementY = j * -1;
-                var streak = 1;
-                while (pieces[incrementX + x] != null && pieces[incrementX + x][incrementY + y] != null && pieces[incrementX + x][incrementY + y] != -1) {
-                    streak++;
-                    incrementX += i * -1;
-                    incrementY += j * -1;    
-                }
-                if (streak > maxStreak) {
-                    maxStreak = streak;
-                }
-            }
+			if (i == 0 && j == 0) {
+				continue;
+			}
+			incrementX = i * -1;
+			incrementY = j * -1;
+			var streak = 1;
+			while (pieces[incrementX + x] != null && pieces[incrementX + x][incrementY + y] != null && pieces[incrementX + x][incrementY + y] != -1) {
+				streak++;
+				incrementX += i * -1;
+				incrementY += j * -1;    
+			}
+			incrementX = i;
+			incrementY = j;
+			while (pieces[incrementX + x] != null && pieces[incrementX + x][incrementY + y] != null && pieces[incrementX + x][incrementY + y] != -1) {
+				streak++;
+				incrementX += i;
+				incrementY += j;
+			}
+			if (streak > maxStreak) {
+				maxStreak = streak;
+			}
         }
     }
     if (maxStreak < longeststreak) {
