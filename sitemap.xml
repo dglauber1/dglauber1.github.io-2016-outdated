@@ -3,12 +3,57 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2016-07-29T21:07:10-04:00</lastmod>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/good-to-great/</loc>
-    <lastmod>2016-07-29T21:07:10-04:00</lastmod>
+    <loc>/project/deep-learning/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/example-external-project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/getting-started/</loc>
+    <lastmod>2016-04-20T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/managing-content/</loc>
+    <lastmod>2016-04-20T11:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/writing-markdown-latex/</loc>
+    <lastmod>2016-04-20T10:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/home/about/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/person-re-identification/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/migrate-from-jekyll/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/clothing-search/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/home/teaching/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>
