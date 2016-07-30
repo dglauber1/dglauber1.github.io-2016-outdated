@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dan&#39;s Test Site </title>
+    <link>danielglauber.online/post/</link>
+    <language>en-us</language>
+    <author>Daniel Glauber</author>
+    <rights>(C) 2016</rights>
+    <updated>2016-07-29 21:07:10 -0400 EDT</updated>
+
+    
+      
+        <item>
+          <title>Good to Great Book Review</title>
+          <link>/danielglauber.online/post/good-to-great/</link>
+          <pubDate>Fri, 29 Jul 2016 21:07:10 EDT</pubDate>
+          <author>Daniel Glauber</author>
+          <guid>/danielglauber.online/post/good-to-great/</guid>
+          <description>&lt;p&gt;I read &lt;strong&gt;Good to Great in January 2016&lt;/strong&gt;. An awesome read sharing detailed analysis on how good companies became great.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>
