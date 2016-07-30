@@ -18,11 +18,11 @@
       <guid>/home/about/</guid>
       <description>
 
-&lt;h1 id=&#34;biography&#34;&gt;Biography&lt;/h1&gt;
+&lt;h2 id=&#34;hi-i-m-daniel-a-developer-designer&#34;&gt;Hi! I&amp;rsquo;m Daniel, a developer &amp;amp; designer.&lt;/h2&gt;
 
-&lt;p&gt;Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. Etiam iaculis libero hendrerit ipsum tempus accumsan. Praesent ex justo, aliquam bibendum nulla in, vehicula rhoncus massa. Fusce gravida mattis tellus vel commodo. Etiam molestie non ligula ac venenatis. Integer semper diam at fringilla dapibus. Nunc tincidunt lacinia nisi, sed blandit purus fermentum vel. Morbi tempus dolor dolor. Phasellus scelerisque est elit, et porttitor mauris faucibus sit amet. Phasellus sollicitudin bibendum sem eu blandit. Curabitur congue felis eu velit faucibus porta. Curabitur a pharetra diam.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m currently a student at Brown University concentrating in computer science.
+This past summer I worked as a software engineering intern at &lt;a href=&#34;https://docasap.com&#34;&gt;DocASAP&lt;/a&gt;, an online platform that enables patients to book appointments with the healthcare providers of their choice.
+In the past, I&amp;rsquo;ve worked with the team at &lt;a href=&#34;https://www.healthmap.org/en&#34;&gt;HealthMap&lt;/a&gt; as a data science intern.&lt;/p&gt;
 </description>
     </item>
     
