@@ -7,8 +7,56 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Daniel Glauber</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Aug 2016 23:59:13 -0400</lastBuildDate>
     <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Go Puzzle</title>
+      <link>/project/go-puzzle/</link>
+      <pubDate>Mon, 01 Aug 2016 23:59:13 -0400</pubDate>
+      
+      <guid>/project/go-puzzle/</guid>
+      <description>&lt;p&gt;A friend recently proposed to me this logic puzzle (&lt;a href=&#34;http://ai.stanford.edu/~hdwang/puzzle2.html&#34;&gt;Source&lt;/a&gt;):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;GoBang is an oriental chess game, also called 5-in-a-Row. Here we consider a modified version:&lt;/p&gt;
+
+&lt;p&gt;The board is a grid extending infinitely to all four directions. In each turn, player A puts two black stones on the board while player B puts down only one white stone. Player A wins if 1000 of his black stones form a consecutive line (either vertical, horizontal, or diagonal). Player B tries to block A from achieving that goal. However, player B himself can never win (i.e. the game continues even if 1000 of his white stones form a line). Show that player A has a strategy so that he can always achieve the goal and win, no matter how player B plays.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I decided it would be a fun side project to make this into an interactive game, so here we go: &lt;a href=&#34;http://danielglauber.online/two-stones/main.html&#34;&gt;http://danielglauber.online/two-stones/main.html&lt;/a&gt; (note: I&amp;rsquo;ve only tested it on Google Chrome, so it probably won&amp;rsquo;t work on other web browsers and definitely not on mobile)&lt;/p&gt;
+
+&lt;p&gt;I haven&amp;rsquo;t been able to figure it out myself to be honest, so if anyone does manage to get, say, 20 pieces in a row, send me a screenshot!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cellphone Puzzle</title>
+      <link>/project/cellphone-puzzle/</link>
+      <pubDate>Mon, 01 Aug 2016 23:49:47 -0400</pubDate>
+      
+      <guid>/project/cellphone-puzzle/</guid>
+      <description>&lt;p&gt;The same friend also proposed to me this logic puzzle (&lt;a href=&#34;http://ai.stanford.edu/~hdwang/puzzle2.html&#34;&gt;Source&lt;/a&gt;):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Suppose that there is a building with 100 floors. You are given 2 identical cellphones. The most interesting property of the cellphones is that every cellphone has its own &amp;ldquo;threshold&amp;rdquo; floor. Let&amp;rsquo;s call that floor N. What this means is that the cellphone will not break when dropped from any floor below floor N, but the cellphone will definitely break from any floor above floor N, including floor N itself.
+For example, if the property of the cellphones is that N equals 15, those cellphones will always break on any floor higher than or equal to the 15th floor, but those cellphones will never break on any floor below floor 15. The same holds true for the other cellphone since they are identical.
+These are very strong cellphones, because they can be dropped multiple times without breaking as long as they are dropped from floors below their &amp;ldquo;threshold&amp;rdquo; floor, floor N. But once an cellphone is dropped from a floor above its threshold floor it will break and may not be used again.
+Your task is to figure out the threshold floor N by dropping the two cellphones off of the building. What is the minimum number of drops necessary to accomplish this goal?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I again decided it would be fun to make this into a responsive puzzle game of sorts. &lt;a href=&#34;http://danielglauber.online/cellphones/cellphones.html&#34;&gt;Try it out!&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Autocorrect</title>
+      <link>/project/autocorrect/</link>
+      <pubDate>Mon, 01 Aug 2016 19:54:18 -0400</pubDate>
+      
+      <guid>/project/autocorrect/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Deep Learning</title>

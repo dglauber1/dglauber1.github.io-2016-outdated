@@ -7,35 +7,8 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Daniel Glauber</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 12:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Deep Learning</title>
-      <link>/project/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/project/deep-learning/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>External Project</title>
-      <link>/project/example-external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/project/example-external-project/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Getting started with the Academic theme for Hugo</title>
@@ -463,6 +436,8 @@ print(&amp;quot;You entered: {}&amp;quot;.format(input_string_var))
 &lt;p&gt;I&amp;rsquo;m currently a student at Brown University concentrating in computer science.
 This past summer I worked as a software engineering intern at &lt;a href=&#34;https://docasap.com&#34;&gt;DocASAP&lt;/a&gt;, an online platform that enables patients to book appointments with the healthcare providers of their choice.
 In the past, I&amp;rsquo;ve worked with the team at &lt;a href=&#34;https://www.healthmap.org/en&#34;&gt;HealthMap&lt;/a&gt; as a data science intern.&lt;/p&gt;
+
+&lt;p&gt;Besides health tech, I have a passion for education in computer science with a focus on inclusion for underrepresented minorities in the field.&lt;/p&gt;
 </description>
     </item>
     
@@ -641,6 +616,81 @@ Liquid::Template.register_tag(&#39;image&#39;, Jekyll::ImageTag)
 
 &lt;p&gt;&lt;a href=&#34;http://heyitsalex.net/&#34;&gt;Hey, it&amp;rsquo;s Alex&lt;/a&gt; was migrated in less than a &lt;em&gt;father-with-kids day&lt;/em&gt; from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this &lt;a href=&#34;https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610&#34;&gt;diff&lt;/a&gt;.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Go Puzzle</title>
+      <link>/project/go-puzzle/</link>
+      <pubDate>Mon, 01 Aug 2016 23:59:13 -0400</pubDate>
+      
+      <guid>/project/go-puzzle/</guid>
+      <description>&lt;p&gt;A friend recently proposed to me this logic puzzle (&lt;a href=&#34;http://ai.stanford.edu/~hdwang/puzzle2.html&#34;&gt;Source&lt;/a&gt;):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;GoBang is an oriental chess game, also called 5-in-a-Row. Here we consider a modified version:&lt;/p&gt;
+
+&lt;p&gt;The board is a grid extending infinitely to all four directions. In each turn, player A puts two black stones on the board while player B puts down only one white stone. Player A wins if 1000 of his black stones form a consecutive line (either vertical, horizontal, or diagonal). Player B tries to block A from achieving that goal. However, player B himself can never win (i.e. the game continues even if 1000 of his white stones form a line). Show that player A has a strategy so that he can always achieve the goal and win, no matter how player B plays.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I decided it would be a fun side project to make this into an interactive game, so here we go: &lt;a href=&#34;http://danielglauber.online/two-stones/main.html&#34;&gt;http://danielglauber.online/two-stones/main.html&lt;/a&gt; (note: I&amp;rsquo;ve only tested it on Google Chrome, so it probably won&amp;rsquo;t work on other web browsers and definitely not on mobile)&lt;/p&gt;
+
+&lt;p&gt;I haven&amp;rsquo;t been able to figure it out myself to be honest, so if anyone does manage to get, say, 20 pieces in a row, send me a screenshot!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cellphone Puzzle</title>
+      <link>/project/cellphone-puzzle/</link>
+      <pubDate>Mon, 01 Aug 2016 23:49:47 -0400</pubDate>
+      
+      <guid>/project/cellphone-puzzle/</guid>
+      <description>&lt;p&gt;The same friend also proposed to me this logic puzzle (&lt;a href=&#34;http://ai.stanford.edu/~hdwang/puzzle2.html&#34;&gt;Source&lt;/a&gt;):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Suppose that there is a building with 100 floors. You are given 2 identical cellphones. The most interesting property of the cellphones is that every cellphone has its own &amp;ldquo;threshold&amp;rdquo; floor. Let&amp;rsquo;s call that floor N. What this means is that the cellphone will not break when dropped from any floor below floor N, but the cellphone will definitely break from any floor above floor N, including floor N itself.
+For example, if the property of the cellphones is that N equals 15, those cellphones will always break on any floor higher than or equal to the 15th floor, but those cellphones will never break on any floor below floor 15. The same holds true for the other cellphone since they are identical.
+These are very strong cellphones, because they can be dropped multiple times without breaking as long as they are dropped from floors below their &amp;ldquo;threshold&amp;rdquo; floor, floor N. But once an cellphone is dropped from a floor above its threshold floor it will break and may not be used again.
+Your task is to figure out the threshold floor N by dropping the two cellphones off of the building. What is the minimum number of drops necessary to accomplish this goal?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I again decided it would be fun to make this into a responsive puzzle game of sorts. &lt;a href=&#34;http://danielglauber.online/cellphones/cellphones.html&#34;&gt;Try it out!&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Autocorrect</title>
+      <link>/project/autocorrect/</link>
+      <pubDate>Mon, 01 Aug 2016 19:54:18 -0400</pubDate>
+      
+      <guid>/project/autocorrect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>/project/deep-learning/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/deep-learning/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>External Project</title>
+      <link>/project/example-external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/example-external-project/</guid>
+      <description></description>
     </item>
     
     <item>
