@@ -3,22 +3,17 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2016-04-20T12:00:00+00:00</lastmod>
+    <lastmod>2016-08-04T13:51:31-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/getting-started/</loc>
-    <lastmod>2016-04-20T12:00:00+00:00</lastmod>
+    <loc>/project/maps/</loc>
+    <lastmod>2016-08-04T13:51:31-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/managing-content/</loc>
-    <lastmod>2016-04-20T11:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/writing-markdown-latex/</loc>
-    <lastmod>2016-04-20T10:00:00+00:00</lastmod>
+    <loc>/post/docasap-wrapup/</loc>
+    <lastmod>2016-08-04T11:27:20-04:00</lastmod>
   </url>
   
   <url>
@@ -27,8 +22,18 @@
   </url>
   
   <url>
-    <loc>/post/migrate-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+    <loc>/project/autocorrect/</loc>
+    <lastmod>2016-08-01T19:54:18-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/theatre-collective/</loc>
+    <lastmod>2016-08-04T11:57:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/ignite/</loc>
+    <lastmod>2016-08-04T13:40:35-04:00</lastmod>
   </url>
   
   <url>
@@ -39,26 +44,6 @@
   <url>
     <loc>/project/cellphone-puzzle/</loc>
     <lastmod>2016-08-01T23:49:47-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/autocorrect/</loc>
-    <lastmod>2016-08-01T19:54:18-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/deep-learning/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/example-external-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/home/teaching/</loc>
-    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme" content="hugo-academic">
     <meta name="generator" content="Hugo 0.16" />
-    <meta name="author" content="Daniel A. Glauber">
+    <meta name="author" content="Daniel Glauber">
     <meta name="description" content="Computer Science Concentrator">
 
     <link rel="stylesheet" href="/css/highlight.min.css">
@@ -52,8 +52,6 @@
                 
                 <li class="nav-item"><a href="/#projects">Projects</a></li>
                 
-                <li class="nav-item"><a href="/#teaching">Teaching</a></li>
-                
                 <li class="nav-item"><a href="/#posts">Posts</a></li>
                 
                 <li class="nav-item"><a href="/#contact">Contact</a></li>
@@ -78,18 +76,33 @@
 		<br><br>
 
         <div class="article-style" itemprop="articleBody">
-            
+            <p>For my software engineering class I implemented an autocorrection program similar to that of Google&rsquo;s search engine form. The user interface&rsquo;s functions include mouseover and arrowkey suggestion selection.</p>
+
+<p>Suggestions are generated using:</p>
+
+<ul>
+<li><p>Prefix matching</p></li>
+
+<li><p><a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein edit distance</a></p></li>
+
+<li><p>Whitespace splitting (&ldquo;mousecheese&rdquo; -&gt; &ldquo;mouse cheese&rdquo;)</p></li>
+</ul>
+
+<p>Suggestions were prioritized using n-gram rankings. An n-gram is a sequence of words of length <em>n</em>. The idea behind n-gram rankings is that the likelihood of a word/suggestion to occur is dependent on the <em>n</em> words that preceed it. The fact that my ranking algorithm uses n-grams as opposed to, say, <em>bi</em>-grams means that the ranking process is configurable to take into account any given number of preceeding words (on the live site I have it set to 5).</p>
+
+<p><a href="http://apps.danielglauber.online/autocorrect">Check it out!</a></p>
+
         </div>
     </article>
 
     <nav>
     <ul class="pager">
         
-        <li class="previous"><a href="/project/cellphone-puzzle/"><span aria-hidden="true">&larr;</span>Cellphone Puzzle</a></li>
+        <li class="previous"><a href="/project/maps/"><span aria-hidden="true">&larr;</span>Providence Maps</a></li>
         
 
         
-        <li class="next"><a href="/project/deep-learning/">Deep Learning<span aria-hidden="true">&rarr;</span></a></li>
+        <li class="next"><a href="/project/theatre-collective/">Theatre Collective<span aria-hidden="true">&rarr;</span></a></li>
         
     </ul>
 </nav>

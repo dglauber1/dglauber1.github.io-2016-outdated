@@ -1,65 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Daniel Glauber</title>
-    <link>/project/</link>
-    <description>Recent content in Projects on Daniel Glauber</description>
+    <title>Play on Daniel Glauber</title>
+    <link>/tags/play/</link>
+    <description>Recent content in Play on Daniel Glauber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Daniel Glauber</copyright>
-    <lastBuildDate>Thu, 04 Aug 2016 13:51:31 -0400</lastBuildDate>
-    <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Providence Maps</title>
-      <link>/project/maps/</link>
-      <pubDate>Thu, 04 Aug 2016 13:51:31 -0400</pubDate>
-      
-      <guid>/project/maps/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Autocorrect</title>
-      <link>/project/autocorrect/</link>
-      <pubDate>Mon, 01 Aug 2016 19:54:18 -0400</pubDate>
-      
-      <guid>/project/autocorrect/</guid>
-      <description>&lt;p&gt;For my software engineering class I implemented an autocorrection program similar to that of Google&amp;rsquo;s search engine form. The user interface&amp;rsquo;s functions include mouseover and arrowkey suggestion selection.&lt;/p&gt;
-
-&lt;p&gt;Suggestions are generated using:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Prefix matching&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Levenshtein_distance&#34;&gt;Levenshtein edit distance&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Whitespace splitting (&amp;ldquo;mousecheese&amp;rdquo; -&amp;gt; &amp;ldquo;mouse cheese&amp;rdquo;)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Suggestions were prioritized using n-gram rankings. An n-gram is a sequence of words of length &lt;em&gt;n&lt;/em&gt;. The idea behind n-gram rankings is that the likelihood of a word/suggestion to occur is dependent on the &lt;em&gt;n&lt;/em&gt; words that preceed it. The fact that my ranking algorithm uses n-grams as opposed to, say, &lt;em&gt;bi&lt;/em&gt;-grams means that the ranking process is configurable to take into account any given number of preceeding words (on the live site I have it set to 5).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://apps.danielglauber.online/autocorrect&#34;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Theatre Collective</title>
-      <link>/project/theatre-collective/</link>
-      <pubDate>Thu, 04 Aug 2016 11:57:13 -0400</pubDate>
-      
-      <guid>/project/theatre-collective/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IgniteCS - Classical Highschool Coding Club</title>
-      <link>/project/ignite/</link>
-      <pubDate>Thu, 04 Aug 2016 13:40:35 -0400</pubDate>
-      
-      <guid>/project/ignite/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Mon, 01 Aug 2016 23:59:13 -0400</lastBuildDate>
+    <atom:link href="/tags/play/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Go Puzzle</title>

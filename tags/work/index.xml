@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work on Daniel Glauber</title>
+    <link>/tags/work/</link>
+    <description>Recent content in Work on Daniel Glauber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Daniel Glauber</copyright>
+    <lastBuildDate>Thu, 04 Aug 2016 11:27:20 -0400</lastBuildDate>
+    <atom:link href="/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>DocASAP Wrap-up</title>
+      <link>/post/docasap-wrapup/</link>
+      <pubDate>Thu, 04 Aug 2016 11:27:20 -0400</pubDate>
+      
+      <guid>/post/docasap-wrapup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Theatre Collective</title>
+      <link>/project/theatre-collective/</link>
+      <pubDate>Thu, 04 Aug 2016 11:57:13 -0400</pubDate>
+      
+      <guid>/project/theatre-collective/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IgniteCS - Classical Highschool Coding Club</title>
+      <link>/project/ignite/</link>
+      <pubDate>Thu, 04 Aug 2016 13:40:35 -0400</pubDate>
+      
+      <guid>/project/ignite/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
