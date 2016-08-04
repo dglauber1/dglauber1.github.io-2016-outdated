@@ -25,7 +25,38 @@
       <pubDate>Thu, 04 Aug 2016 11:27:20 -0400</pubDate>
       
       <guid>/post/docasap-wrapup/</guid>
-      <description></description>
+      <description>&lt;p&gt;The day we arrived at DocASAP, we were assigned our first task: build the desks that we&amp;rsquo;d be using for the rest of the summer. Assembling IKEA furniture was not how I expected to start my summer internship at the health tech company, but it offered a surprisingly fun introduction to the startup lifestyle.&lt;/p&gt;
+
+&lt;p&gt;Besides learning how to use a power drill (CEO Puneet Maheshwari was a great teacher), I have gained much from my experience at DocASAP. The first technical project I was assigned to was performance testing the front-end of the website. I became very familiar with the tool JMeter, a software that allows one to simulate and analyze the response times of 1000+ concurrent users accessing a website.
+We were able to isolate bottlenecks in the client-server flow in order to optimize performance.&lt;/p&gt;
+
+&lt;p&gt;Since then I have had the chance to work on many different projects:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;UX/UI review for the patient booking flow&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A database table migration, which was a nice introduction to PHP&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;SEO analysis for DocASAP&amp;rsquo;s &lt;a href=&#34;https://www.google.com/webhp?sourceid=chrome-instant&amp;amp;rlz=1C1RUCY_enUS695US695&amp;amp;ion=1&amp;amp;espv=2&amp;amp;ie=UTF-8#q=dr%20wheeler%20maxwell&#34;&gt;Google White Labels&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Researching database configurations (master/slave vs. clusters) in preparation for a possible database restructuring&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Integrating the central database hub with external Electronic Practice Management (EPM) APIs&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Refactoring the codebase of a 10000+ line backend project, which was a fascinating and challenging software engineering problem&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Creating a fun company video! As of this time, the video is still in production, but once I get word that it&amp;rsquo;s finished, I&amp;rsquo;ll share a link to it&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Leaving out the company video, this progression of projects was an increasingly challenging yet manageable journey through the roles a developer may hold at a tech company.
+Whereas before the operations of a professional software engineering team was somewhat of a mystery to me, I now feel confident that I could succeed in a professional environment such as this one.
+I&amp;rsquo;m especially thankful to have had the chance to work on these last couple of projects. I feel that I have made a significant contribution to my company&amp;rsquo;s core product, which is something that not all interns are able to say.&lt;/p&gt;
+
+&lt;p&gt;Wearing many hats is fairly typical for a developer at startup that is growing at the rate DocASAP is. Looking back, I am impressed by the company&amp;rsquo;s growth in just the three months that I&amp;rsquo;ve been here. Since arriving, I&amp;rsquo;ve witnessed many milestones for DocASAP, including reaching 1,000,000 appointments booked with one of our clients. The company is rapidly expanding, with new interviewees in the office every other day. I&amp;rsquo;m excited to follow the progress of DocASAP in years to come.&lt;/p&gt;
+
+&lt;p&gt;Most importantly, the people that I&amp;rsquo;ve met and worked with here at DocASAP have made my time as an intern comfortable, rewarding, and fun.
+The term &amp;ldquo;strong family spirit&amp;rdquo; is aptly used on the &lt;a href=&#34;https://docasap.com/team&#34;&gt;DocASAP Team Page&lt;/a&gt;. The small team (~20 people here at the headquarters) and the colorful, bright, open office, replete with beanbag chairs and bouncy balls and void of cubicles (see above picture), contribute to making DocASAP a welcoming, unified work environment. Perhaps most important to me, a broke college student spending summer away from home for the first time, were the catered lunches. Every day, the company&amp;rsquo;s employees congregated in the psuedo-kitchen to eat together. Free food is great, but breaking bread allowed me to get to know a group of kind, intelligent, and humorous people I&amp;rsquo;m not soon to forget.&lt;/p&gt;
+</description>
     </item>
     
     <item>
